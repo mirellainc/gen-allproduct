@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTO LANDING PAGES</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="icon" href="https://cdn.orderonline.id/uploads/images_3111301750865499449.png">
+    <style>
+        .preview-iframe-container {
+            background-color: #f8f9fa;
+            border-left: 1px solid #e5e7eb;
+            border-right: 1px solid #e5e7eb;
+            border-top: 1px solid #e5e7eb;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .color-preview {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+            border: 1px solid #e5e7eb;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .preview-container {
+            min-height: 200px;
+            transition: all 0.3s ease;
+            overflow: auto;
+            max-height: 500px;
+        }
+        .preview-container pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            margin: 0;
+            padding: 0;
+        }
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <div class="max-w-6xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-8">
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">AUTO GENERATOR ALL PRODUCT</h1>
+                <p class="text-gray-600">Generet - Jadwal - Running - Order - Klosing - Tutup Buku. </p>
+            </div>
+
+            <!-- Main Form -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <!-- Form Section -->
+                    <div class="p-6 md:p-8 w-full md:w-1/2">
+                        <form id="promptForm">
+<!-- Arip Baris Satu -->
+                            <div class="mb-6">
+                                <label class="block text-violet-900 font-medium mb-2" for="barissatu">
+                                    1. Gambar Utama
+                                </label>
+                                <input type="text" id="barissatu" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="https://link.com/image.jpg">
+                            </div>
+ <!-- Arip Baris Dua -->
+                            <div class="mb-6">
+                                <label class="block text-violet-900 font-medium mb-2" for="barisdua">
+                                    2. Judul Product
+                                </label>
+                                <input type="text" id="barisdua" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Drinking Water Rack">
+                            </div>
+
+<!-- Arip Baris Tiga -->
+                            <div class="mb-6">
+                                <label class="block text-violet-900 font-medium mb-2" for="baristiga">
+                                    3. Diskripsi Product
+                                </label>
+                                <textarea id="baristiga" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Dispenser Air Galon Ini Hadir Dengan Desain Modern Menggunakan Stand Besi Kokoh Yang Menjaga Galon Tetap Stabil Saat Digunakan."></textarea>
+                            </div>
+
+<!-- Arip Baris Empat -->
+                            <div class="mb-6">
+                                <label class="block text-red-900 font-medium mb-2" for="barisempat">
+                                    4. Gambar Unggulan 1
+                                </label>
+                                <input type="text" id="barisempat" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="https://link.com/image.jpg">
+                            </div>
+<!-- Arip Baris Lima -->
+                            <div class="mb-6">
+                                <label class="block text-violet-900 font-medium mb-2" for="barislima">
+                                    5. Diskripsi Unggulan Gambar 1
+                                </label>
+                                <textarea id="barislima" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Tanpa Listrik – Lebih Hemat Energi Dan Cocok Digunakan Di Mana Saja."></textarea>
+                            </div>
+<!-- Arip Baris Enam -->
+                            <div class="mb-6">
+                                <label class="block text-red-900 font-medium mb-2" for="barisenam">
+                                    6. Gambar Unggulan 2
+                                </label>
+                                <input type="url" id="barisenam" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="https://link.com/image.jpg">
+                            </div>
+<!-- Arip Baris Tujuh -->
+                            <div class="mb-6">
+                                <label class="block text-violet-900 font-medium mb-2" for="baristujuh">
+                                    7. Diskripsi Unggulan Gambar 2
+                                </label>
+                                <textarea id="baristujuh" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Tanpa Listrik – Lebih Hemat Energi Dan Cocok Digunakan Di Mana Saja."></textarea>
+                            </div>
+<!-- Arip Baris Delapan -->
+                            <div class="mb-6">
+                                <label class="block text-red-900 font-medium mb-2" for="barisdelapan">
+                                    8. Gambar Unggulan 3
+                                </label>
+                                <input type="text" id="barisdelapan" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="https://link.com/image.jpg">
+                            </div>
+<!-- Arip Baris Sembilan -->
+                            <div class="mb-6">
+                                <label class="block text-violet-900 font-medium mb-2" for="baristujuh">
+                                    9. Diskripsi Unggulan Gambar 3
+                                </label>
+                                <textarea id="baristujuh" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Tanpa Listrik – Lebih Hemat Energi Dan Cocok Digunakan Di Mana Saja."></textarea>
+                            </div>
+<!-- Arip Baris Sepuluh -->
+                            <div class="mb-6">
+                                <label class="block text-green-900 font-medium mb-2" for="barissepuluh">
+                                    10. Harga Normal
+                                </label>
+                                <input type="text" id="barissepuluh" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Contoh : 225.000">
+                            </div>
+<!-- Arip Baris Sebelas -->
+                            <div class="mb-6">
+                                <label class="block text-green-900 font-medium mb-2" for="barissebelas">
+                                    11. Harga Jual
+                                </label>
+                                <input type="text" id="barissebelas" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Contoh : 165.000">
+                            </div>
+<!-- Arip Baris Duabelas -->
+                            <div class="mb-6">
+                                <label class="block text-green-900 font-medium mb-2" for="barisduabelas">
+                                    12. Form Pemsanan ( EMBED DARI OO )
+                                </label>
+                                <textarea id="barisduabelas" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="<!-- OrderOnline Embed Code - v8.0.2 -->"></textarea>
+                            </div>
+
+<!-- Generate Button -->
+                            <div class="mt-8">
+                                <button type="button" id="generateBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-200 flex items-center justify-center">
+                                  GENERATE LANDING PAGES
+                                </button>
+                            </div>
+
+<!-- Preview Section -->
+                            <div class="mt-8">
+                            <center>
+                                <h2 class="text-xl font-bold text-gray-800 mb-4">HASIL GENERATE</h2></center>
+                                <div class="preview-container bg-white rounded-lg p-4 border border-gray-200 mb-4">
+                                    <p class="text-gray-500 text-center py-8">Your generated prompt will appear here</p>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <button id="copyBtn" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition duration-200 flex items-center">
+                                        <i class="fas fa-copy mr-2"></i> Copy
+                                    </button>
+                                    <button id="downloadBtn" class="bg-gray-800 hover:bg-gray-900 text-white font-medium py-2 px-4 rounded-lg transition duration-200 flex items-center">
+                                        <i class="fas fa-download mr-2"></i> Download
+                                    </button>
+                                </div>
+                            </div>
+                    <!-- Live Preview Section -->
+                    <div class="p-6 md:p-8 w-full md:w-1/2">
+                        <div class="sticky top-8">
+                            <center>
+                                <label class="block text-violet-900 font-medium mb-2">
+                                    Preview Hasil Generate
+                                </label>
+                            </center>
+                            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+
+                                <div class="preview-iframe-container relative" style="padding-top: 301.100%;">
+                                    <iframe id="livePreview" class="absolute top-0 left-0 w-full h-full border-0" srcdoc="<html><body style='display:flex;justify-content:center;align-items:center;height:100%;'> </body></html>"></iframe>
+                                </div>
+
+                            </div>
+                            <div class="mt-4 text-center">
+                                <p class="text-sm text-gray-500">Preview Versi Handphone</p>
+                            </div>
+                        </div>
+                    </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+    <script>
+        // Update live preview
+        function updateLivePreview(html) {
+            const iframe = document.getElementById('livePreview');
+            iframe.srcdoc = html;
+        }
+
+        document.getElementById('generateBtn').addEventListener('click', function() {
+            // Get all form values
+const barissatu = document.getElementById('barissatu').value;
+const barisdua = document.getElementById('barisdua').value;
+const baristiga = document.getElementById('baristiga').value;
+const barisempat = document.getElementById('barisempat').value;
+const barislima = document.getElementById('barislima').value;
+const barisenam = document.getElementById('barisenam').value;
+const baristujuh = document.getElementById('baristujuh').value;
+const barisdelapan = document.getElementById('barisdelapan').value;
+const barissembilan = document.getElementById('barissembilan').value;
+const barissepuluh = document.getElementById('barissepuluh').value;
+const barissebelas = document.getElementById('barissebelas').value;
+const barisduabelas = document.getElementById('barisduabelas').value;
+
+            // Generate the prompt with proper field mapping
+            const prompt =`<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Flash Sale - Best Selling Products</title>
+    <script src="https://cdn.tailwindcss.com"><\/script>
+    <script src="https://unpkg.com/lucide@latest"><\/script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn.orderonline.id/uploads/images_8633291767803962604.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+        }
+        .premium-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 pb-20 max-w-md mx-auto">
+
+<!-- Main Content -->
+    <main>
+<!-- Hero Image -->
+    <section class="w-full">
+    <img src="${barissatu || 'Not provided'}" class="w-full h-auto">
+    </section>
+
+<!-- Product Info -->
+    <div class="bg-white p-4 shadow-sm">
+    <div class="flex items-start justify-between gap-4">
+    <div class="flex-1">
+    <h1 class="text-lg font-medium text-[#000000] leading-tight mb-2">
+    <span class="bg-gradient-to-r from-[#ff3838] to-[#d0011b] text-white text-xs px-2 py-0.5 rounded font-medium mb-1">STAR+</span> ${barisdua || 'Not provided'} </h1>
+    <div class="flex items-center gap-2 mb-2">
+    </div>
+    </div>
+    </div>
+
+<!-- Flash Sale Badge -->
+    <div class="flex items-center gap-1 mb-1">
+    </div>
+    <div class="grid grid-cols-3 gap-4 pt-3 border-t border-gray-100 text-center">
+    <div>
+    <div class="font-bold text-gray-900">4.8</div>
+    <div class="text-xs text-gray-500">Rating Toko</div>
+    </div>
+    <div>
+    <div class="font-bold text-gray-900">1.2K</div>
+    <div class="text-xs text-gray-500">Penilaian</div>
+    </div>
+    <div>
+    <div class="font-bold text-gray-900">10RB+</div>
+    <div class="text-xs text-gray-500">Terjual</div>
+    </div>
+    </div>
+    </div>
+        
+<!-- Product Description -->
+    <div class="bg-white mt-2 p-4 shadow-sm">
+    <h3 class="font-bold text-gray-900 mb-3">Deskripsi Produk</h3>
+    <div class="text-sm text-gray-600 leading-relaxed space-y-2" id="description">
+    <p>${baristiga || 'Not provided'}</p>
+    </div>
+    </div>
+
+<!-- Reviews -->
+    <div class="bg-white mt-2 p-4 shadow-sm">
+    <div class="flex items-center justify-between mb-4">
+    <h3 class="font-bold text-gray-900">Fitur Unggulan</h3>
+    </div>
+    <div class="text-center">
+    <img src="${barisempat || 'Not provided'}" alt="Bottle Cleaner Brush Detail" class="w-full h-auto rounded-lg shadow-md mb-4">
+    <p class="text-gray-700">${barislima || 'Not provided'}</p>
+    <br>
+    </div>
+    <div class="text-center">
+    <img src="${barisenam || 'Not provided'}" alt="Bottle Cleaner Brush Detail" class="w-full h-auto rounded-lg shadow-md mb-4">
+    <p class="text-gray-700">${baristujuh || 'Not provided'}</p>
+    <br>
+    </div>
+    <div class="text-center">
+    <img src="${barisdelapan || 'Not provided'}" alt="Bottle Cleaner Brush Detail" class="w-full h-auto rounded-lg shadow-md mb-4">
+    <p class="text-gray-700">${barissembilan || 'Not provided'}</p>
+    </div>
+    </div>
+        
+<!-- Combined Promo & Price Section -->
+    <section class="py-8 bg-white">
+    <div class="container mx-auto px-4">
+    <div class="max-w-2xl mx-auto bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-8 text-white text-center relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-full opacity-10">
+    <div class="absolute inset-0 flex items-center justify-center">
+    <i class="fas fa-gem text-6xl"></i>
+    </div>
+    </div>
+    <div class="relative z-10">
+    <h3 class="text-xl font-bold mb-2">PROMO SPESIAL HARI INI</h3>
+    <p class="text-lg mb-4">Dapatkan Diskon Spesial Untuk Hari Ini Saja, Harga Akan Kembali Normal Setelah:</p>
+                    
+    <div class="flex justify-center space-x-4 mb-6">
+    <div class="bg-white text-blue-900 rounded-lg p-3 w-20">
+    <div class="text-2xl font-bold" id="hours">12</div>
+    <div class="text-sm">Jam</div>
+    </div>
+    <div class="bg-white text-blue-900 rounded-lg p-3 w-20">
+    <div class="text-2xl font-bold" id="minutes">45</div>
+    <div class="text-sm">Menit</div>
+    </div>
+    <div class="bg-white text-blue-900 rounded-lg p-3 w-20">
+    <div class="text-2xl font-bold" id="seconds">30</div>
+    <div class="text-sm">Detik</div>
+    </div>
+    </div>
+
+    <div class="flex flex-col items-center mb-6">
+    <div class="text-xl line-through mb-1">Rp ${barissepuluh || 'Not provided'}/div>
+    <div class="text-4xl md:text-5xl font-bold text-yellow-300">Rp ${barissebelas || 'Not provided'}</div>
+    </div>
+    <p class="text-blue-100 mb-6">Pesan Sekarang Juga Sebelum Promo Diskon Berakhir !!!</p>
+    </div>
+    </div>
+    </div>
+    </section>
+    
+<!-- Shipping Info -->
+    <div class="bg-white mt-1 p-1 shadow-sm">
+    <div class="flex items-start gap-1 mb-1">
+    <div class="flex-1">
+    </div>
+    </div>
+    <div class="flex items-center gap-1 p-1">
+    <i data-lucide="shield-check" class="w-4 h-4 text-green-600"></i>
+    <span class="text-xs text-green-700">PENGIRIMAN 2 - 3 HARI SETELAH PEMESANAN</span>
+    </div>
+    <div class="flex items-center gap-1 p-1">
+    <i data-lucide="shield-check" class="w-4 h-4 text-green-600"></i>
+    <span class="text-xs text-green-700">MOHON ISI ALAMAT DENGAN LENGKAP</span>
+    </div>
+    <div class="flex items-center gap-1 p-1">
+    <i data-lucide="shield-check" class="w-4 h-4 text-green-600"></i>
+    <span class="text-xs text-green-700">100% PRODUCT ORIGINAL</span>
+    </div>
+    </div>
+        
+<!-- Order Form Section -->
+    <div class="bg-white mt-2 p-4 shadow-sm">
+    <div class="flex items-center justify-between mb-4">
+    <div class="max-w-3xl mx-auto">
+    <div class="mb-8 text-center">
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+    <div class="premium-bg text-white py-4 px-6 text-center">
+    <h2 class="text-xl font-bold">
+                            FORM PEMESANAN
+    </h2>
+    <p class="text-white-600">Isi Data Dengan Lengkap Dan Benar, Agar Kami Proses Pesanan Anda Dengan Cepat.</p>
+    </div>
+    <div class="p-6">
+${duabelas|| 'Not provided'}
+    </div>
+    </div>
+    
+    <script>
+        // Countdown Timer
+        function updateTimer() {
+            const now = new Date();
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 999);
+            
+            const diff = endOfDay - now;
+            
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateTimer, 1000);
+        updateTimer();
+        
+        // Color Variant Selection
+        document.querySelectorAll('.color-variant').forEach(variant => {
+            variant.addEventListener('click', function() {
+                document.querySelectorAll('.color-variant').forEach(v => {
+                    v.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+
+        // Set iframe dimensions to mobile size
+        document.addEventListener('DOMContentLoaded', function() {
+            const iframeContainer = document.querySelector('.preview-iframe-container');
+            iframeContainer.style.width = '375px';
+            iframeContainer.style.maxWidth = '100%';
+            iframeContainer.style.margin = '0 auto';
+        });
+         lucide.createIcons();
+    </script>
+    
+</body>
+</html>
